@@ -81,18 +81,3 @@ Example: [https://openapi.programming-hero.com/api/phero-tube/video/aaac](https:
 - Integrate search functionality
 - on input change  de-activate active button on category and show matched videos only
 
-
-
-<hr/>
-
-<p align="center" style="font-size: 34px; font-weight:bold">
- Design Idea's
-</p>
-Basic Layout
-<img src="design/Frame 1.png">
-<hr/>
-Error Layout
-
-<img src="design/Frame 3.png">
-
-<hr/>
