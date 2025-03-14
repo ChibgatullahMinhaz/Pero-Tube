@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,40 +11,60 @@
 
     <title>Pero-Tube</title>
     <style>
-        .active{
+        .active {
             background-color: #FF1F3D;
             color: white;
         }
     </style>
 </head>
+
 <body>
-<header class="sticky top-0 z-50 max-w-[95%] mx-auto ">
-    <nav class="border-b-2">
-        <div class="flex justify-between items-center bg-base-100 shadow-sm lg:py-7 py-5">
-            <div>
-                <img
-                      alt="pero tube logo"
-                      src="assets/Logo.png" />
+    <header class=" max-w-[95%] mx-auto ">
+        <nav class="border-b-2">
+            <div class="flex justify-between items-center bg-base-100 shadow-sm lg:py-7 py-5">
+                <div>
+                    <img alt="pero tube logo" src="assets/Logo.png" />
+                </div>
+                <div class="flex gap-2">
+                    <input type="text" placeholder="Search Video" class="input input-bordered border w-24 md:w-auto" />
+                </div>
+                <div>
+                    <button class="btn bg-[#FF1F3D] p-3 font-bold text-white">sort by view</button>
+                </div>
             </div>
-            <div class="flex gap-2">
-              <input type="text" placeholder="Search Video" class="input input-bordered border w-24 md:w-auto" />
+        </nav>
+        <!-- category -->
+        <section class="flex justify-center items-center">
+            <div class="flex justify-center items-center gap-2 mt-4">
+                <div>
+                    <button class="btn active border-2 p-4">All</button>
+
+                </div>
+                <div id="categoryBtns" class="flex justify-center items-center gap-2"></div>
+                <!-- dynamic btns -->
+
             </div>
-            <div >
-              <button class="btn bg-[#FF1F3D] p-3 font-bold text-white">sort by view</button>
-            </div>
-          </div>
-    </nav>
-    <!-- category -->
-     <section class="flex justify-center items-center">
-        <div class="flex justify-center items-center gap-2 mt-4">
-            <button class="btn active p-4">All</button>
-           <div id="categoryBtns">
-            <!-- dynamic btns -->
-           </div>
+        </section>
+    </header>
+
+
+    <main class="w-11/12 mx-auto">
+        <div class="text-center hidden" id="loading">
+            <span class="loading loading-ball loading-xs"></span>
+            <span class="loading loading-ball loading-sm"></span>
+            <span class="loading loading-ball loading-md"></span>
+            <span class="loading loading-ball loading-lg"></span>
+            <span class="loading loading-ball loading-xl"></span>
         </div>
-     </section>
-</header>
-<script src="utillities/utilities.js"></script>
-<script src="js/app.js"></script>
+        <section id="cardContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
+            <!-- displaying videos -->
+            <!-- dynamic card -->
+
+        </section>
+    </main>
+
+    <script src="utillities/utilities.js"></script>
+    <script src="js/app.js"></script>
 </body>
+
 </html>
