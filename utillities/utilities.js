@@ -1,4 +1,3 @@
-console.log('connected');
 const showLoading = () => {
     const loading = document.getElementById('loading');
     loading.classList.remove('hidden');

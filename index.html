@@ -26,18 +26,16 @@
                     <img alt="pero tube logo" src="assets/Logo.png" />
                 </div>
                 <div class="flex gap-2">
-                    <input type="text" placeholder="Search Video" class="input input-bordered border w-24 md:w-auto" />
+                    <input type="text" id="search" placeholder="Search Video" class="input input-bordered border w-24 md:w-auto" />
                 </div>
-                <div>
-                    <button class="btn bg-[#FF1F3D] p-3 font-bold text-white">sort by view</button>
-                </div>
+               
             </div>
         </nav>
         <!-- category -->
         <section class="flex justify-center items-center">
             <div class="flex justify-center items-center gap-2 mt-4">
                 <div>
-                    <button class="btn active border-2 p-4">All</button>
+                    <button id="all_btn" class="btn active border-2 p-4">All</button>
 
                 </div>
                 <div id="categoryBtns" class="flex justify-center items-center gap-2"></div>
@@ -61,6 +59,19 @@
             <!-- dynamic card -->
 
         </section>
+        <!-- modal -->
+        <dialog id="video_details" class="modal">
+            <div class="modal-box">
+              <div id="details-container"></div>
+      
+              <div class="modal-action">
+                <form method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn">Close</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
     </main>
 
     <script src="utillities/utilities.js"></script>
